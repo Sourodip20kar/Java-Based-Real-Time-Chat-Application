@@ -76,7 +76,7 @@ public class Server implements Runnable{
                 out.println("Please enter a nickname: ");
                 nickname= in.readLine();
                 System.out.println(nickname + " Connected!");
-                broadcast(nickname + "Joined the chat" );
+                broadcast(nickname + " Joined the chat" );
                 String message;
                 while((message = in.readLine()) != null){
                     if(message.startsWith("/nick ")){
